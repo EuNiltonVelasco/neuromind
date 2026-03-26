@@ -1,0 +1,273 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: linear-gradient(180deg, #0a2a5c, #0d3b7a);
+  color: #fff;
+  text-align: center;
+  padding: 14px; /* ↓ menor */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  background: url('../img/bg.png') center/cover no-repeat;
+  padding: 100px 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 42, 92, 0.9),
+    rgba(10, 42, 92, 0.65),
+    rgba(244, 244, 244, 1)
+  );
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* ===== LIVRO ===== */
+.book {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.book img {
+  width: 380px; /* ↓ leve ajuste */
+  max-width: 100%;
+  transform: perspective(1000px) rotateY(-10deg);
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
+}
+
+/* ===== TEXTO ===== */
+.text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.text h1 {
+  color: #fff;
+  font-size: 38px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.text p {
+  color: #e0e6f5;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* ===== BOTÃO ===== */
+.btn {
+  display: inline-block;
+  background-color: #ff7a00;
+  padding: 14px 34px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 5px 0 #cc5500;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #ff8c1a;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+  text-align: center;
+  padding: 55px 20px; /* ↓ menor */
+}
+
+/* ===== TÍTULOS ===== */
+h2 {
+  color: #1c3c6b;
+  margin-bottom: 10px;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #1c3c6b;
+  margin: 6px auto;
+}
+
+/* ===== SOBRE ===== */
+.sobre p {
+  max-width: 600px;
+  margin: auto;
+  color: #555;
+}
+
+/* ===== BENEFÍCIOS ===== */
+.beneficios ul {
+  list-style: none;
+  margin-top: 12px;
+}
+
+.beneficios li {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+/* ===== TRECHO ===== */
+.quote {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 650px;
+  margin: 18px auto 0;
+  font-style: italic;
+  color: #555;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* ===== CTA FINAL ===== */
+.cta {
+  background: linear-gradient(180deg, #123d7a, #0a2a5c);
+  color: #fff;
+}
+
+.cta h2 {
+  color: #fff;
+}
+
+.cta h2::after {
+  background: #fff;
+}
+
+.cta p {
+  margin-bottom: 18px;
+  color: #dfe7f5;
+}
+
+/* ===== FOOTER (AJUSTADO) ===== */
+.footer {
+  background: #0a2a5c;
+  color: #fff;
+  padding: 8px 20px; /* ↓ bem menor */
+  text-align: center;
+}
+
+/* remove espaços extras internos */
+.footer-content h3 {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.footer-content p {
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+/* social bem compacto */
+.social {
+  margin-bottom: 4px;
+}
+
+.social a {
+  margin: 0 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* copyright mínimo */
+.copy {
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+/* SOCIAL */
+.social {
+  margin-bottom: 8px;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 6px;
+  padding: 6px 12px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: #ff7a00;
+  transform: translateY(-2px);
+}
+
+/* COPYRIGHT */
+.copy {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .text h1 {
+    font-size: 26px;
+  }
+
+  .hero {
+    padding: 70px 20px;
+  }
+
+  .book img {
+    width: 360px;
+  }
+}
